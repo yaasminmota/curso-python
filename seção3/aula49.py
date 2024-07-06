@@ -1,9 +1,9 @@
-# Introdução ao try e expect
+# Introdução ao try e except
 
 # se digitar um numero, ele recebe como str
 numero_str = input('Digite um número:')
 
-# transformar em float para nao concatenar; veja que aqui o é possivel ser uma str e ao converter p float dara erro e para o programa
+# transformar em float para nao concatenar; veja que aqui é possivel ser uma str e ao converter p float dara erro e para o programa
 # numero_float = float(numero_str)
 
 # se esse numero for inteiro 
