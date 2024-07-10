@@ -8,4 +8,4 @@ lista_b = lista_a.copy() # copia o valor da lista a
 
 lista_a[0] = 'João'
 print(lista_a)
-print(lista_b)
+print(lista_b) #se a lista que foi copiada for alterada nao interfere na lista b
