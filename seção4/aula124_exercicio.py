@@ -47,4 +47,4 @@ for question in questions:
         except:
             print('Its just a number')
 
-print(f'Você acertou {hits} vezes e errou {errors} vezes.')
+print(f'You got {hits} right and {errors} wrong.')
