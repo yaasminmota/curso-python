@@ -1,5 +1,5 @@
 lista = [
-    {'nome': 'Luiz', 'sobrenome': 'miranda'},
+    {'nome': 'Luiz', 'sobrenome': 'Miranda'},
     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
     {'nome': 'Daniel', 'sobrenome': 'Silva'},
     {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
@@ -18,9 +18,9 @@ def exibir (lista):
     for i in lista:
         print(i)
 
-l1 = sorted(lista, key=lambda item: item['nome'])
-l2 = sorted(lista, key=lambda item: item['nome'])
+l1 = sorted(lista, key=lambda item: item['nome'], reverse=True)
+l2 = sorted(lista, key=lambda item: item['sobrenome'])
 
 exibir(l1)
-exibir(l2)
+
 
