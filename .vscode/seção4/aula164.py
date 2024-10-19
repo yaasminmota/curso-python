@@ -7,7 +7,7 @@ def concatenate(string):
 
     return internal
 
-f = concatenate('oi')
+phrase = concatenate('oi')
 
-print(f('tudobem'))
+print(phrase('tudobem'))
 

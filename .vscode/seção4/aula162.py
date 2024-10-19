@@ -12,3 +12,6 @@ def external_function(function, x):
 
 s = external_function(sum,2)
 print(s(4))
+
+m = external_function(multiplication,3) # m = internal_function
+print(m(3)) #internal_function(4)
