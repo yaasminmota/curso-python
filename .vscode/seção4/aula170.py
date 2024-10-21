@@ -13,4 +13,4 @@ l2 = ['BA', 'SP', 'MG', 'RJ']
 
 print(list(zip(l1,l2)))
 
-print(list(zip_longest(l1,l2,fillvalue='Sem valor')))
+print(list(zip_longest(l1,l2,fillvalue='valueless')))
