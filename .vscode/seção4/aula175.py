@@ -1,19 +1,19 @@
 from itertools import groupby
 #antes de agrupar por dados, eles também tem que estar ordenados
-lista = [1,1,3,1,2,2,3]
-lista_ordenada = sorted(lista)
-print(lista_ordenada)
+list = [1,1,3,1,2,2,3]
+ordered_list = sorted(list)
+print(ordered_list)
 
-grupos = groupby(lista)
+group = groupby(list)
 
 #groupby retorna pares de chave, valor e a chave é o agrupamento
 # a chave é outro iteravel(os valores do agrupamento)
 
-for chave, valor in grupos:
-    print(chave)
-    print(list(valor))
+for key, value in group:
+    print(key)
+    print(list(value))
 
-alunos = [
+students = [
     {'nome': 'Luiz', 'nota': 'A'},
     {'nome': 'Letícia', 'nota': 'B'},
     {'nome': 'Fabrício', 'nota': 'A'},
@@ -25,9 +25,9 @@ alunos = [
     {'nome': 'Anderson', 'nota': 'C'},
 ]
 
-alunos_ordenados = sorted(alunos, key=lambda dict:dict['nota'])
-grupos_alunos  = groupby(alunos_ordenados, key=lambda a:a['nota'])
+ordered_students = sorted(students, key=lambda dict:dict['nota'])
+group_students  = groupby(ordered_students, key=lambda a:a['nota'])
 
-for agrupamento, valores in grupos_alunos:
-    print(agrupamento, list(valores))
+for grouping, values in group_students:
+    print(grouping, list(values))
 
